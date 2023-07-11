@@ -42,8 +42,9 @@ public class App {
             + finalScore + "%, você não atingiu a pontuação mínima necessária para sua aprovação.");
       }
     } catch (NumberFormatException e) {
-      // TODO Auto-generated catch block
       e.printStackTrace();
+    } finally {
+      System.out.println("Fim do programa.");
     }
 
   }
