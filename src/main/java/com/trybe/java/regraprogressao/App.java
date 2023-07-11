@@ -43,7 +43,13 @@ public class App {
         totalScore += activityScore * activityWeight;
         totalWeight += activityWeight;
       }
-      double finalScore = (double) totalScore / totalWeight;
+      double finalScore;
+      if (totalWeight != 0) {
+        finalScore = (double) totalScore / totalWeight;
+      } else {
+        System.out.print("A pontuação final não pode ser calculada, pois o peso total é zero.");
+        finalScore = 0; // Ou outra ação adequada
+      }
 
       if (finalScore >= 85) {
         System.out.print("Parabéns! Você alcançou " + finalScore + "%! E temos o prazer "
