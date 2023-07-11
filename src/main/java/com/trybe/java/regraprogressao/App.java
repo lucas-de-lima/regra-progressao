@@ -2,10 +2,17 @@ package com.trybe.java.regraprogressao;
 
 import java.util.Scanner;
 
+// SUGESTÃO DE USO DO SLF4J
+// import org.slf4j.Logger;
+// import org.slf4j.LoggerFactory;
+
 /**
  * App.
  */
 public class App {
+  // SUGESTÃO DE USO DO SLF4J (é melhor usar um logger do que o System.out.println()
+  // private static final Logger logger = LoggerFactory.getLogger(App.class);
+
 
   /**
    * Metodo main.
@@ -19,12 +26,17 @@ public class App {
       int totalWeight = 0;
 
       for (int i = 1; i <= activityCount; i++) {
-        System.out.print("Digite o nome da atividade " + i + ": ");
+        System.out.print("Digite o nome da atividade " + i + ": "); 
+        // o ideal seria = logger.info("Digite o nome da atividade {}: ", i);
+        // Em vez de usar a concatenação de strings com o operador +,
+        // é recomendado usar especificadores
+        // de formato para construir a string. Essa abordagem é mais legível 
+        // e ajuda a evitar erros de formatação.
         String activityName = scanner.nextLine();
 
-        System.out.print("Digite o peso da atividade " + i + ": ");
-        int activityWeight = Integer.parseInt(scanner.nextLine());
-
+        System.out.print("Digite o peso da atividade " + i + ": "); 
+        int activityWeight = Integer.parseInt(scanner.nextLine());  
+        
         System.out.print("Digite a nota obtida para " + activityName + ": ");
         int activityScore = Integer.parseInt(scanner.nextLine());
 
