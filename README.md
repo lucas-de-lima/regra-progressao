@@ -1,10 +1,3 @@
 # :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+
+O projeto "Regra de Progressão" é uma calculadora de desempenho acadêmico desenvolvida em Java. Ele permite que os estudantes cadastrem atividades avaliativas, informando o nome, peso e nota de cada atividade. O programa calcula automaticamente o percentual alcançado com base nas notas e pesos, comparando-o com o valor mínimo de aprovação de 85%. Com base no resultado, o programa informa se o estudante foi aprovado ou reprovado. O objetivo é auxiliar os estudantes a acompanharem seu desempenho acadêmico e fornecer um feedback sobre sua situação de aprovação.
